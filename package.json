@@ -1,0 +1,32 @@
+{
+  "name": "build-game-in-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanaya-avasthi/build-game-in-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanaya-avasthi/build-game-in-react/issues"
+  },
+  "homepage": "https://github.com/tanaya-avasthi/build-game-in-react#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1"
+  }, 
+  "browserslist": [
+    "last 2 Safari versions",
+    "last 2 Chrome versions"
+  ]
+}
