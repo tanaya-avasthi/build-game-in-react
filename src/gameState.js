@@ -13,8 +13,6 @@ const gameState = {
   timeToEndCelebrating: -1,
   tick() {
     this.clock++;
-    console.log("clock", this.clock);
-
     if(this.clock === this.wakeTime) {
       this.wake();
     } else if(this.clock === this.sleepTime) {
@@ -34,7 +32,6 @@ const gameState = {
     return this.clock;
   },
   startGame() {
-    console.log("hatching");
     this.current = "HATCHING";
     this.wakeTime = this.clock + 3;
     modFox('egg');
@@ -143,10 +140,10 @@ const gameState = {
     this.hungryTime = getNextHungerTime(this.clock);
   },
   feed() {
-    if(!this.current === 'HUNGRY') {
+    if(!this.current === "HUNGRY") {
       return;
     }
-    this.current = 'FEEDING';
+    this.current = "FEEDING";
     this.dieTime = -1;
     this.poopTime = getNextPoopTime(this.clock);
     modFox('eating');

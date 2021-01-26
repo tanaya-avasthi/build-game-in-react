@@ -47,12 +47,6 @@ body {
   left: -19px;
 }
 
-.hidden {
-  display: none;
-}
-
-/* buttons */
-
 .buttons {
   position: absolute;
   top: 674px;
@@ -75,15 +69,11 @@ body {
   justify-content: space-between;
 }
 
-/* lol poop */
-
 .poop-bag {
   position: absolute;
   top: 300px;
   left: 160px;
 }
-
-/* modal */
 
 .modal-inner {
   background-color: blueviolet;
@@ -100,11 +90,9 @@ body {
   right: 0;
 }
 
-.modal:empty {
-  display: none;
-}
-
-.modal-inner:empty {
+.modal:empty,
+.modal-inner:empty,
+.hidden {
   display: none;
 }
 
@@ -125,14 +113,8 @@ body {
   left: 290px;
 }
 
-.fox-rain {
-  top: 362px;
-}
-
-.fox-hungry {
-  top: 362px;
-}
-
+.fox-rain,
+.fox-hungry,
 .fox-eating {
   top: 362px;
 }
